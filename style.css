@@ -1,0 +1,140 @@
+
+body {
+  margin-top:45px;
+}
+.navbar {
+  border-bottom-left-radius:0;
+}
+@media(min-width:768px) {
+  .navbar .navbar-brand {
+    width:224px; 
+    text-align: center;
+  }
+}
+
+.hover:hover {
+    background-color: #f1f1f1;
+}
+
+@media(min-width:768px) {
+    .sider-navbar {
+        position: fixed;
+        top: 0px; 
+        left: 225px;
+        width: 350px;
+        margin-left: -225px;
+        border-right:1px solid #E7E7E7; 
+        border-radius: 0;
+        background: #ffffff;
+        bottom: 0;
+        padding-bottom: 40px;
+        padding-top: 30px;
+        overflow-x: hidden;
+        overflow-y: overlay;
+        padding-left: 52px;
+    }
+    
+    .sider-navbar li.sider-menu {
+      
+    }
+    .sider-navbar li.sider-menu ul {
+        width: 225px;
+    }
+    .sider-navbar li.sider-menu > ul > li,
+    .sider-navbar li.sider-menu ul li ul li{
+     -webkit-transition: all 0.3s ease-out;
+     transition: all 0.3s ease-out;
+    }
+    .sider-navbar li.sider-menu > ul > li:last-child {
+      border-bottom:1px solid #E7E7E7;
+    }
+    .sider-navbar li.sider-menu ul li a {
+      outline: none;
+      padding:15px;
+    }
+    
+}
+.sider-navbar li.sider-menu ul {
+  list-style:none;
+  padding: 0;
+}
+
+.sider-navbar li.sider-menu ul li a {
+    display: block;
+    padding:15px;
+    text-decoration: none;
+    color:#5E5E5E;
+}
+.sider-navbar li.sider-menu ul li ul {
+  background-color:#f3f3f3;
+}
+
+*:focus {
+    outline: none;
+}
+
+#profile {
+   padding-left: 12%;
+}
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 16px;
+  color: #333333;
+}
+
+.profile-usertitle-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.custom-check {
+    display: inline-block;
+    width: 19px; height: 19px;
+    background: white;
+    border: 1px solid #CCCCCC;
+    font-family: 'Glyphicons Halflings';
+    font-size: 17px;
+    line-height: 1;
+    border-radius: 4px;
+  }
+
+.custom-check::before {
+  content: "\e013";
+  color: #424242;
+  display: none;
+}
+
+input[type=checkbox]:checked+.custom-check::before {
+  display: block;
+  color: white;
+  background-color: #5cb85c;
+}
+
+.profile-usertitle-title {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+@media(max-width:768px) {
+  #profile {
+    display:none;
+  }
+}
+@media(min-width:768px) {
+    #page-keeper {
+      width: 100%;
+      padding: 10px 10px 10px 250px;
+    }
+}
+
+::-webkit-scrollbar{width:12px}
+::-webkit-scrollbar-track{background-color:#eaeaea;border-left:1px solid #ccc}
+::-webkit-scrollbar-thumb{background-color:#222}
+::-webkit-scrollbar-thumb:hover{background-color:#aaa}
